@@ -1,0 +1,95 @@
+
+
+body{overflow-x:hidden;font-family: 'VT323', monospace;font-size:20px;background: #6B88FF;}
+b, span{display:block;}
+b{margin-bottom:15px;font-size:30px;}
+#floor{position: absolute;background:url('img/floor.png');bottom: 0;width: 100%;left: 0;height: 106px;}
+#scroll{image-rendering: crisp-edges;position:fixed;top:0;bottom:106px;width:3125px;background:url('img/background.png');background-repeat:repeat;background-position:left bottom;background-size:auto 100%;}
+#mario{background-image:url('img/mario.png?v=2');background-position:top left;background-repeat:no-repeat;position:fixed;z-index:9999;bottom:106px;left:50%;margin-left:-30px;width:65px;height:129px;background-blend-mode: color;}
+.box{position:relative;height:270px;float:left;padding:20px;margin-left:50px;top:50%;margin-top:-200px;width:200px;}
+#btn_left{font-size:80px;color:white;position:fixed;left:0;bottom:-25px;cursor:pointer;}
+#btn_right{font-size:80px;color:white;position:fixed;right:0;bottom:-25px;cursor:pointer;}
+.media{position:relative;height:270px;float:left;padding:20px;margin-left:100px;top:50%;margin-top:-200px;width:300px;}
+
+.gallery{
+    position:relative;height:500px;float:left;padding:20px;margin-left:100px;top:35%;margin-top:-200px;width:600px;}
+
+
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
